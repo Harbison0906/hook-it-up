@@ -9,15 +9,12 @@ const App = () => {
   return (
     <main>
       <Router>
-        
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/users/:id" component={User} />
-          </Switch>
-        
-        <Home />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/users/:id" component={User} />
+        </Switch>
       </Router>
-      
+
     </main>
   );
 }
